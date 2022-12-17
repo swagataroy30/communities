@@ -1,0 +1,44 @@
+.header__container {
+  padding: 0 3rem;
+}
+.hero__text div {
+  margin-top: 4rem;
+  color: var(--primary-color);
+  font-size: 75px;
+}
+
+.hero__section {
+  display: flex;
+}
+
+.hero__text {
+  flex-basis: 62%;
+}
+
+.hero__text p {
+  margin-top: 3rem;
+  line-height: 1.6;
+}
+
+.hero__image img {
+  width: 483px;
+}
+
+.btn__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  padding: 12px 50px;
+  border-radius: 47px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
