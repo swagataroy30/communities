@@ -1,0 +1,40 @@
+.section__features {
+  padding: 0 4rem;
+}
+
+.section__features__heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  font-size: 1.5rem;
+}
+
+.section__feature {
+  display: flex;
+  gap: 3rem;
+}
+
+.feature {
+  flex-basis: 62%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feature img {
+  width: 64px;
+}
+
+.feature p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.features__img {
+  width: 450px;
+}
+
+.features__img3 {
+  width: 400px;
+  height: 375px;
+}
