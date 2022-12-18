@@ -34,11 +34,19 @@
   outline: none;
   background-color: var(--primary-color);
   font-size: 1rem;
+  font-weight: bold;
   padding: 12px 50px;
   border-radius: 47px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
   background-color: var(--secondary-color);
+  transform: scale(1.1, 1.1);
+}
+
+.btn__login {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
 }

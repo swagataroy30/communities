@@ -1,8 +1,12 @@
 import React from 'react';
-import Navbar from './Navbar';
+import { useNavigate } from 'react-router-dom';
+
+import Navbar from '../Components/Home/Navbar';
 import styles from './Home.module.css';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={`${styles['header__container']}`}>
       <Navbar />
@@ -14,12 +18,16 @@ const Home = () => {
             and help others grow...
           </p>
           <div className={`${styles['btn__container']}`}>
-            <button className={styles.btn}>Signup</button>
-            <button className={styles.btn}>Login</button>
+            <button className={styles.btn} onClick={() => navigate('/signup')}>
+              Signup
+            </button>
+            <button className={`${styles.btn} ${styles['btn__login']}`} onClick={() => navigate('/login')}>
+              Login
+            </button>
           </div>
         </div>
         <div className={`${styles['hero__image']}`}>
-          <img src={require('../../assests/hero-img.jpg')} alt='hero-img' />
+          <img src={require('../assets/hero-img.jpg')} alt='hero-img' />
         </div>
       </div>
     </div>
